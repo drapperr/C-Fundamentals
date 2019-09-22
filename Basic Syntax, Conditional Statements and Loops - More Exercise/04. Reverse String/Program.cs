@@ -6,7 +6,13 @@ namespace _04._Reverse_String
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello World!");
+            string text = Console.ReadLine();
+            string revertText = string.Empty;
+            for (int i = text.Length - 1; i >= 0; i--)
+            {
+                revertText += text[i];
+            }
+            Console.WriteLine(revertText);
         }
     }
 }
