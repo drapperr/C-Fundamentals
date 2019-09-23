@@ -1,14 +1,14 @@
 ﻿using System;
 
-namespace _02._Pounds_to_Dollars
+namespace _01._Convert_Meters_to_Kilometers
 {
     class Program
     {
         static void Main(string[] args)
         {
-            double pounds = double.Parse(Console.ReadLine());
-            double usd = pounds * 1.31;
-            Console.WriteLine($"{usd:f3}");
+            int meters = int.Parse(Console.ReadLine());
+            double km = meters / 1000.0;
+            Console.WriteLine($"{km:f2}");
         }
     }
 }
